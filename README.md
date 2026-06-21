@@ -47,6 +47,10 @@ first join attempt failed with an error that explains that the request is not su
 
 That didnt work either
 
+It's not working because I'm on windows 11 home so im going to virtualize windows 11 pro and try to connect from it.
+
+This is failing to boot because I dont have AMD-V enabled in BIOS so i will go to bios to enable it.
+
 
 
 
