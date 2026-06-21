@@ -45,6 +45,7 @@ both pinging the server and nslookup work so the server is running and discovera
 
 first join attempt failed with an error that explains that the request is not supported FailToJoinDomainFromWorkgroup, this might be due to DNS settings, I'll try to set the primary and seconday DNS of this PC to the server, reset my connection, and see if that works.
 
+That didnt work either
 
 
 
