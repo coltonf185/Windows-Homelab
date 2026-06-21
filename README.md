@@ -9,6 +9,7 @@ Step 1: Get windows server on my other PC so I can use that to host the active d
 
 Accidentally downloaded the non desktop version so now I have to use the command line to download the windows iso from the microsoft website and then run it again to upgrade my windows version to the desktop experience. I'm not at the level yet to use Windows Server without a GUI, although it would be a really good learning experience for the future.
 
-Now I've mounted the downloaded disk image and ran it and am installing the desktop version of Windows Server 2025.
+This install was messed up as well, I had my boot options set to UEFI instead of legacy so the install would loop after manually selecting where to boot from. I eventually found out and changed it to legacy and now I have a fresh 2019 install.
+
 
 
