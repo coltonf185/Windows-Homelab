@@ -51,6 +51,8 @@ It's not working because I'm on windows 11 home so im going to virtualize window
 
 This is failing to boot because I dont have AMD-V enabled in BIOS so i will go to bios to enable it.
 
+The account is now connected successfully and I am going to create a shared network drive using the net use command so i can sync files between the server and the VM. 
+
 
 
 
