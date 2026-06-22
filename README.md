@@ -25,8 +25,6 @@ Some things I have to remember before beginning this:
 
 Firstly, I'm going to update everything I can so that I have all the drivers needed to be able to connect to the internet and change certain settings. 
 
-
-
 I'm going to go through the built in windows setting on the server, I allowed network discovery and set the network profile to ! so it is discoverable to the other PC's on my network.
 
 Now I'm going to go into my router's webpage, login as admin, and add a dhcp reservation for my server so it won't change automatically. Following this, I reconnect to the internet and use ipconfig to find out if the IP address updated. It worked.
@@ -38,6 +36,8 @@ named server polo.polo
 Now my AD DS server is online and so is the DNS server, so I'm going to try to connect to it directly from my main PC first before I create VM's. As aforementioned, I have to make an account for myself and then set my DNS server as the IP address of the server and then try to login to it through the terminal.
 
 Active Directory Users and Computers -> servername -> users -> new -> user -> input details and create user
+
+![Derek](4.png)
 
 Step 3: connect 
 
