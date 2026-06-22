@@ -27,7 +27,7 @@ Firstly, I'm going to update everything I can so that I have all the drivers nee
 
 
 
-I'm going to go through the built in windows setting on the server, I allowed network discovery and set the network profile to ![private](images/1.png) so it is discoverable to the other PC's on my network.
+I'm going to go through the built in windows setting on the server, I allowed network discovery and set the network profile to ! so it is discoverable to the other PC's on my network.
 
 Now I'm going to go into my router's webpage, login as admin, and add a dhcp reservation for my server so it won't change automatically. Following this, I reconnect to the internet and use ipconfig to find out if the IP address updated. It worked.
 
