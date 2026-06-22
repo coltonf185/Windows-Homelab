@@ -37,7 +37,7 @@ Now my AD DS server is online and so is the DNS server, so I'm going to try to c
 
 Active Directory Users and Computers -> servername -> users -> new -> user -> input details and create user
 
-![Derek](4.png)
+![Derek](3.png)
 
 Step 3: connect 
 
@@ -47,13 +47,19 @@ both pinging the server and nslookup work so the server is running and discovera
 
 first join attempt failed with an error that explains that the request is not supported FailToJoinDomainFromWorkgroup, this might be due to DNS settings, I'll try to set the primary and seconday DNS of this PC to the server, reset my connection, and see if that works.
 
+![Serverjoin](4.png)
+
 That didnt work either
 
 It's not working because I'm on windows 11 home so im going to virtualize windows 11 pro and try to connect from it.
 
 This is failing to boot because I dont have AMD-V enabled in BIOS so i will go to bios to enable it.
 
+![AMD-V](5.png)
+
 The account is now connected successfully and I am going to create a shared network drive using the net use command so i can sync files between the server and the VM. 
+
+![connected](6.png)
 
 
 
