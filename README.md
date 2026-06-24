@@ -61,8 +61,23 @@ The account is now connected successfully and I am going to create a shared netw
 
 ![connected](6.png)
 
+Ive now mapped the network drive to the derek user using the Net Use command and the folder is just named derek. Next, I'm going to make folders for three departments and make corresponding groups for sales and finance and add derek to each group. 
+
+<img width="776" height="451" alt="7" src="https://github.com/user-attachments/assets/6381b6ce-f7f0-4455-bb1a-84b843234345" />
 
 
+<img width="733" height="509" alt="Screenshot 2026-06-23 204748" src="https://github.com/user-attachments/assets/02ffb147-273e-4d4e-8262-a5b20370fddc" />
+
+I've also made a folder for each department with a text document inside it. first I'll configure the permissions of each group so that only people in the corresponding groups can access the folders. I'll configure the sales group to have modify permissions on the sales folder.
 
 
+<img width="344" height="434" alt="image" src="https://github.com/user-attachments/assets/f6d062f1-ce5d-4956-89d0-a727ebaa9c20" />
+
+Then I create the drive map so anybody in the sales group will be able to access this drive which will be the contents of the sales folder
+
+<img width="650" height="290" alt="Screenshot 2026-06-23 221357" src="https://github.com/user-attachments/assets/ec203d32-3ddb-41f5-a049-330f11293a9e" />
+
+I apply the targeting restrictions to the drive so only sales group users can access the drive
+
+<img width="648" height="264" alt="Screenshot 2026-06-23 221419" src="https://github.com/user-attachments/assets/bf8c80f8-58b1-49f6-9a62-0d8d279acccb" />
 
