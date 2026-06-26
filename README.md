@@ -81,3 +81,8 @@ I apply the targeting restrictions to the drive so only sales group users can ac
 
 <img width="648" height="264" alt="Screenshot 2026-06-23 221419" src="https://github.com/user-attachments/assets/bf8c80f8-58b1-49f6-9a62-0d8d279acccb" />
 
+Now after logging into the derek VM I've found it's still inaccessible and not showing up at all. I rechecked all the settings to make sure the GPO existed, applied to sales, derek was in the sales group, and restarting. I forgot to actually share the folder over the network. 
+
+<img width="916" height="558" alt="image" src="https://github.com/user-attachments/assets/54a31c51-d696-4ec8-94db-8d305ccf367a" />
+
+I've also confirmed that local edits that the derek VM makes transfer successfully to the server.
