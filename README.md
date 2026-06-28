@@ -94,3 +94,20 @@ Next I'm going to create another user, Ken, and put them in finance and configur
 
 Since ken is in the finance group he is able to access the finance folder but is unable to access the sales folder but can access the finance folder. cmdline included to show different user, not just modified derek permissions.
 
+Section 2: Wazuh SIEM
+
+I've never used a SIEM before but I want to use it to monitor my server and simulate real event monitoring. I'm going to use Wazuh since its free. First I need to install Hyper V in the server and put ubuntu server on it. This will host Wazuh and then I'll need to install an agent on the PC as well. 
+
+First i create an external network switch which i will use to connect the ubuntu vm to when i create it
+
+insert image
+
+also I will have to disable secure boot since secure boot won't allow linux to boot.
+
+img
+
+I have to download the ubuntu server image and create the VM on it
+
+after the vm is up and running, I can use the curl command to fetch the wazuh install script since I have no GUI on this version
+
+Now that I've completed the install, I can access the Wazuh dashboard through the web browser and install an agent on my server that will create logs for the dashboard.
