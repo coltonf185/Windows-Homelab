@@ -110,4 +110,8 @@ I have to download the ubuntu server image and create the VM on it
 
 after the vm is up and running, I can use the curl command to fetch the wazuh install script since I have no GUI on this version
 
-Now that I've completed the install, I can access the Wazuh dashboard through the web browser and install an agent on my server that will create logs for the dashboard.
+Now that I've completed the install, I can access the Wazuh dashboard through the web browser and install an agent on my server that will create logs for the dashboard. I will install an agent on derek VM as well so I can get monitoring for both the server and the client that may be compromised. 
+
+I ran into an error I made where I put the hosting IP address of the agent for derek VM as my AD server instead of the deployed ubuntu VM. Reinstalling agent and setting IP properly. I couldn't delete it for some reason so I changed the config file itself to point to the proper IP address. Finally working now
+
+img 2deployed
