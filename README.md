@@ -90,5 +90,7 @@ I've also confirmed that local edits that the derek VM makes transfer successful
 Next I'm going to create another user, Ken, and put them in finance and configure a network drive for the finance group as well.
 
 <img width="1121" height="582" alt="image" src="https://github.com/user-attachments/assets/b5b1273d-3eae-43c3-bae0-fa29260452f7" />
+<img width="1520" height="534" alt="image" src="https://github.com/user-attachments/assets/da34faf6-a2ad-4d29-9585-5c9820d95409" />
 
-Since ken is in the finance group he is able to access the finance folder but is unable to access the sales folder.
+Since ken is in the finance group he is able to access the finance folder but is unable to access the sales folder but can access the finance folder. cmdline included to show different user, not just modified derek permissions.
+
