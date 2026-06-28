@@ -86,3 +86,9 @@ Now after logging into the derek VM I've found it's still inaccessible and not s
 <img width="916" height="558" alt="image" src="https://github.com/user-attachments/assets/54a31c51-d696-4ec8-94db-8d305ccf367a" />
 
 I've also confirmed that local edits that the derek VM makes transfer successfully to the server.
+
+Next I'm going to create another user, Ken, and put them in finance and configure a network drive for the finance group as well.
+
+<img width="1121" height="582" alt="image" src="https://github.com/user-attachments/assets/b5b1273d-3eae-43c3-bae0-fa29260452f7" />
+
+Since ken is in the finance group he is able to access the finance folder but is unable to access the sales folder.
