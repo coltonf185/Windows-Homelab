@@ -1,6 +1,8 @@
 # Windows-Homelab
 Windows Homelab to practice IT
 
+Section 1: Active Directory
+
 Overview
 
 I've made this setup before with a VM hosting the server, and then as my second PC running the server, but it's since been wiped which gives me an opportunity to try to do it myself without significant assistance from AI and/or the internet. Running the server on an Optiplex 9020.
@@ -100,11 +102,13 @@ I've never used a SIEM before but I want to use it to monitor my server and simu
 
 First i create an external network switch which i will use to connect the ubuntu vm to when i create it
 
-insert image
+<img width="1647" height="684" alt="image" src="https://github.com/user-attachments/assets/eec0c6a6-a9a3-4947-8da3-50abcddd75ee" />
+
 
 also I will have to disable secure boot since secure boot won't allow linux to boot.
 
-img
+<img width="695" height="670" alt="image" src="https://github.com/user-attachments/assets/52c2e436-8bc4-4f01-8610-cbe9f0108292" />
+
 
 I have to download the ubuntu server image and create the VM on it
 
@@ -114,4 +118,20 @@ Now that I've completed the install, I can access the Wazuh dashboard through th
 
 I ran into an error I made where I put the hosting IP address of the agent for derek VM as my AD server instead of the deployed ubuntu VM. Reinstalling agent and setting IP properly. I couldn't delete it for some reason so I changed the config file itself to point to the proper IP address. Finally working now
 
-img 2deployed
+<img width="1891" height="606" alt="image" src="https://github.com/user-attachments/assets/010b6538-20ce-4f9f-8868-725059afbca9" />
+
+Before simulating anything that will trigger the SIEM, I install sysmon so I get more logs with increased detail on each machine. 
+
+Now that I have sysmon I'll start to trigger the SIEM with a simple failed password attempt on derek vm and see if it was sent to Wazuh dashboard.
+
+This attempt to send logs to the SIEM failed and after a lot of investigation I found its simply because the event viewer on derek VM is not configured to log the event of a failed logon. So I need to fix that by using administrative rights to allow it on the VM.
+
+The SIEM is working now and all the failed login attempts are logged here
+
+<img width="1796" height="676" alt="image" src="https://github.com/user-attachments/assets/0b45502d-82e6-4906-982e-8811e31df4ca" />
+
+At this point I want to make a small diagram because its become a little difficult to keep track of what I'm connecting to what
+
+<img width="1282" height="445" alt="Homelab Diagram" src="https://github.com/user-attachments/assets/6d1e31cd-859a-4626-b309-60e648c06dc9" />
+
+
